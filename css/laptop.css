@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #343a40;
+}
+
+/* BANNER */
+
+#banner {
+  position: relative;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+/* position text */
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NAVIGATION */
+
+/* apply Flexbox to navbar */
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+nav i {
+  padding-right: 8px;
+}
+
+/* design avatar */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  transform: scale(5);
+  border: 2px solid #fff;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+nav i,
+#target i,
+#footer i,
+.hobby-content i {
+  color: #199cdb;
+}
+
+/* INFOMATION */
+
+/* apply grid to each section info detail */
+
+.info-detail {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 30px auto;
+  row-gap: 50px;
+  padding: 16px;
+  border: 1px solid #d8d8d8;
+}
+
+.section-content-info {
+  grid-column: 1/-1;
+}
+
+.date {
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.now {
+  background-color: #199cdb;
+  padding: 4px 6px;
+  border-radius: 15%;
+  color: #fff;
+}
+
+/* create bullet point befor content */
+
+.section-bullet-point {
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.section-bullet-point::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -25px;
+  top: 4px;
+  background-color: #199cdb;
+  border-radius: 50%;
+}
+
+.level-skill {
+  background-color: #199cdb;
+  display: inline-block;
+  height: 2px;
+  width: 45px;
+  margin-right: 10px;
+}
+
+/* section hobby */
+
+/* apply grid to section hobby content */
+
+#hobby-content {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50px 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.hobby-icon {
+  width: 40px;
+  height: 40px;
+  color: #199cdb;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CERTIFICATE */
+
+.certi-image {
+  width: 180px;
+}
+
+/* apply flex to certificate text */
+
+.certi-detail {
+  display: flex;
+  gap: 20px;
+}
+
+.certi-web {
+  border-right: 1px solid #d6c08d;
+  margin-bottom: 32px;
+}
+
+.certi-java {
+  margin-bottom: 32px;
+  padding-left: 16px;
+}
+
+.certi-data {
+  grid-column: 1/-1;
+  border-top: 1px solid #d6c08d;
+  padding-top: 32px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* PROJECT */
+
+.project-section {
+  border: 1px solid #f1f3f5;
+}
+
+/* apply flex to section which contain icon and year */
+
+.project-section-icon {
+  padding-left: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* add border to h3 in project */
+
+.project-title {
+  border-top: 1px solid #f1f3f5;
+  border-bottom: 1px solid #f1f3f5;
+  padding: 10px 0 10px 16px;
+  font-weight: bold;
+}
+
+.project-year {
+  background-color: #199cdb;
+  border-radius: 20%;
+  padding: 2px 10px;
+  color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+/* add border to each td element */
+
+td {
+  padding: 8px;
+  border-top: 1px solid #f1f3f5;
+}
+
+/* css to column 1 in table */
+
+tr td:first-child {
+  width: 100px;
+}

@@ -1,0 +1,55 @@
+@media (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  /* apply flex to section which contain icon and year */
+
+  .project-section-icon {
+    padding-left: 16px;
+    display: flex;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  #nav {
+    gap: 32px;
+  }
+
+  .certi-image {
+    width: 280px;
+  }
+
+  .certi-detail {
+    flex-direction: column;
+  }
+
+  /* apply flex to section which contain icon and year */
+
+  .project-section-icon {
+    padding-left: 16px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 8px;
+  }
+  .dev {
+    grid-column: 2/3;
+  }
+
+  /* css to column 1 in table */
+
+  tr td:first-child {
+    width: 90px;
+  }
+}
